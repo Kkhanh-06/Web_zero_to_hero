@@ -4,83 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <style>
+        .items {
+            display: flex;
+            justify-content: space-between;
+            background-color: #cbcccb;
+        }
+    </style>
 </head>
 <body>
-    <table class="new_portal" border="1px">
-        <tr class="img_top">
-            <th colspan="3"><img src="" alt="Ảnh tiêu đề"></th>
-        </tr>
-        <tr class="items" style="background-color: #cbcccb; color;">
-            <th colspan="3" style="width: 900px; text-align: left;">
-                <a href="" style="color: blue;">Trang chủ</a> | <a href="" style="color: blue;">Tin tức</a> | <a href="" style="color: blue;">Giải trí</a> | <a href="" style="color: blue;">Thể thao</a> | <a href="" style="color: blue;">Liên hệ</a>
+    <table border="1px" style="text-align: left; font-family: 'Times New Roman', Times, serif;">
+        <tr class="top__img">
+            <th colspan="3">
+                <img src="https://www.dignexus.com/assets/images/news-portal-banner.png" alt="" style="width: 100%; height: 100%;">
             </th>
         </tr>
-        <tr class="link_portal" style="vertical-align: top;">
-            <th rowspan="5" class="link_portal--left" style="text-align: left; width: 200px;">
+        <tr class="top__menu">
+            <th colspan="3" style="text-align: left; background-color: #cbcccb;"><a href="">Trang chủ</a> | <a href="">Tin tức</a> | <a href="">Giải trí</a> | <a href="">Thể thao</a> | <a href="">Liên hệ</a></th>
+        </tr>
+        <tr>
+            <th rowspan="7" style="vertical-align: text-top; width: 300px; font-size: 15px; background-color: #f1f2f1; padding: 0 10px;">
                 <p>Danh mục</p>
                 <ul>
                     <li><a href="">Công nghệ</a></li>
                     <li><a href="">Giáo dục</a></li>
                     <li><a href="">Thời sự</a></li>
                     <li><a href="">Đời sống</a></li>
-                </ul> 
+                </ul>
                 <p>Tin mới nhất</p>
                 <ul>
-                    <li><a href="">Nội dung 1</a></li>
-                    <li><a Nội href="">Nội dung 2</a></li>
-                    <li><a Nội href="">Nội dung 3</a></li>
-                    <li><a Nội href="">Nội dung 4</a></li>
-                </ul>      
+                    <li><a href="">Ông Trump không hài lòng, lập tức giục Fed hạ lãi suất</a></li>
+                    <li><a href="">Cao tốc Biên Hòa - Vũng Tàu, sân bay Long Thành cơ bản xong trong năm 2025</a></li>
+                    <li><a href="">Bộ tài chính: Giao dịch tài sản số sẽ phải đóng thuế</a></li>
+                    <li><a href="">Quốc gia NATO nêu nêu điều sẽ gây ra "cơn ác mộng" cho Nga</a></li>
+                </ul>
             </th>
-            <th colspan="2" class="link_portal--right" style="text-align: left;">
-                <img src="" alt="" class="info">Bài viết nổi bật
+            <th colspan="2" style="padding: 10px; border-bottom: 5px solid #259325;">
+                <p style="font-size: 25px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="" style="width: 15px; height: 15px; font-size: 1000px;"> Bài viết nổi bật</p>
                 <tr>
-                    <th class="link_portal--right__info" style="width: 350px; height: 200px; text-align: left; vertical-align: text-top;">
-                        <img src="" alt="">Ảnh 1
-                        <p>Nội dung 1</p>
-                        <button>Xem chi tiết</button>
+                    <td style="border: none; vertical-align: top;">
+                        <img src="https://image.tinnhanhchungkhoan.vn/300x200/Uploaded/2025/wpxlcdjwi/2025_03_06/thumbnail-2-13-6806.png" alt="" style="width: 100%; height: 300px;">
+                        <p>
+                            <h4>
+                                VPS lavestory - Chuyện đầu tư: Truyền cảm hứng. khởi đầu tư Tin nhanh chứng khoán
+                            </h4>
+                            <p style="font-style: italic; font-size: 14px;"">
+                                Với mong muốn tạo cầu nối tới cộng đồng đang tìm hiểu về đầu tư, đặc biệt là quan tâm tới thị trường chưng khoản để cùng chia sẻ những câu chuyện, những kinh ngôược đầu tư thú vị...
+                            </p>
+                        </p>
+                    </td>
+                    <td style="border: none; vertical-align: top;">
+                        <img src="https://tse-tesol.edu.vn/wp-content/uploads/2024/11/word-image-31706-1-300x200.png" alt="" style="width: 100%; height: 300px;">
+                        <p>
+                            <h4>
+                                Các cấp độ tiếng Anh cho trẻ em là gì? Phân loại cấp độ tiếng Anh cho trẻ theo năng lực 
+                            </h4>
+                            <p style="font-style: italic; font-size: 14px;">
+                                Để giúp trẻ tiến bộ nhanh chóng và phát triển tốt nhất nhiều phụ huynh và giáo viên đã lựa chọn định lương học tiếng Anh dựa trên các kỳ thi như Cambridge Toung Learners English Tests... 
+                            </p>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th style="border: none; height: 30px;">
+                        <img src="https://locnuochaiphong.vn/wp-content/uploads/2018/07/Button-1.png" alt="" style="width: 100px; height: 30px; padding: none;">
                     </th>
-                    <th class="link_portal--right__info" style="width: 350px; height: 200px; text-align: left; vertical-align: text-top;">
-                        <img src="" alt="">Ảnh 2
-                        <p>Nội dung 2</p>
-                        <button>Xem chi tiết</button>
+                    <th style="border: none; height: 30px;">
+                        <img src="https://locnuochaiphong.vn/wp-content/uploads/2018/07/Button-1.png" alt="" style="width: 100px; height: 30px;">
                     </th>
                 </tr>
                 <tr>
-                    <th class="link_portal--right__info" style="width: 350px; height: 200px; text-align: left; vertical-align: text-top;">
-                        <img src="" alt="">Ảnh 3
-                        <p>Nội dung 3</p>
-                        <button>Xem chi tiết</button>
+                    <td style="border: none; vertical-align: top;">
+                        <img src="https://www.align.vn/storage/2024/09/Google-Business-Thumbnail-300x200.png" alt="" style="width: 100%; height: 300px;">
+                        <p>
+                            <h4>
+                                Hướng dẫn đăng ký Google Business Profile cho doanh nghiệp 
+                            </h4>
+                            <p style="font-style: italic; font-size: 14px;">
+                                Cô thế mới xu hường mua sắm hay tìm hiểu dịch vụ của người tiêu đong đã thay đổi rất nhiều. Hãy tưởng tượng bạn muốn mua một cuốn sách hay tìm kiếm đặt lịch một dịch vụ spa... 
+                            </p>
+                        </p>
+                    </td>
+                    <td style="border: none; vertical-align: top;">
+                        <img src="https://nanotravel.vn/wp-content/uploads/2024/03/image-1-300x200.png" alt="" style="width: 100%; height: 300px;">
+                        <p>
+                            <h4>
+                                Bà Nà Hills - điểm đến hàng đầu tại Đà Năng, luôn thu hút hàng triệu du khách 
+                            </h4>
+                            <p style="font-style: italic; font-size: 14px;">
+                                Năm 2025, Banahill Già và có nhiều thay đổi quan trong pháp nàng cao trải nghiệm đi khách và mở rộng chính sách ưu đãi. Những điều chỉnh này không chỉ mang lại sự tiên lại trọng việc mua vé... 
+                            </p>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th style="border: none;">
+                        <img src="https://locnuochaiphong.vn/wp-content/uploads/2018/07/Button-1.png" alt="" style="width: 100px; height: 30px;">
                     </th>
-                    <th class="link_portal--right__info" style="width: 350px; height: 200px; text-align: left; vertical-align: text-top;">
-                        <img src="" alt="">Ảnh 4
-                        <p>Nội dung 4</p>
-                        <button>Xem chi tiết</button>
+                    <th style="border: none;">
+                        <img src="https://locnuochaiphong.vn/wp-content/uploads/2018/07/Button-1.png" alt="" style="width: 100px; height: 30px;">
                     </th>
                 </tr>
                 <tr>
-                    <th colspan="2" class="link_portal--right__others" style="text-align: left;">
+                    <th colspan="2">
+                        <p style="font-size: 25px;"><img src="https://icons.veryicon.com/png/o/miscellaneous/common-icons-6/more-106.png" alt="" style="width: 20px; height: 20px;"> Các bài viết khác</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
                         <ul>
-                            <li><a href="">Nội dung 1</a></li>
-                            <li><a href="">Nội dung 2</a></li>
-                            <li><a href="">Nội dung 3</a></li>
+                            <li><a href="">iPhone màn hình gập sẽ được Apple trang bị "vũ khí đặc biệt"</a></li>
+                            <li><a href="">Tỉnh thành có tốc độ Internet mạnh nhất Việt Nam: Bất ngờ cái tên dẫn đầu</a></li>
+                            <li><a href="">Chùm ảnh hé lộ trọn vẹn thiết kế của loạt iPhone 17 sắp ra mắt</a></li>
                         </ul>
-                    </th>
-                </tr>
-                <tr>
-                    <th colspan="2" style="text-align: left;">
-                        <img src="" alt="">Các bài viết khác
                     </th>
                 </tr>
             </th>
         </tr>
         <tr>
-            <th colspan="2" class="btm__items--left" style="text-align: justify;">
-                <div>Bản quyền <img src="" alt=""> 2025 - UDU | Liên hệ: info@udu.com</div>
-            </th>
-            <th class="btm__items--right">
-                <div>Theo dõi chúng tôi: <a href="">Facebook</a> | <a href="">Twitter</a> | <a href="">Instagram</a></div>
+            <th colspan="3">
+                <div class="items">
+                    <p>Bản quyền 2025 - UDU | Liên hệ: info@udu.com</p>
+                    <p>Theo dõi chúng tôi: <a href="">Facebook</a> | <a href="">Twitter</a> | <a href="">Instagram</a></p>
+                </div>
             </th>
         </tr>
     </table>
