@@ -1,0 +1,322 @@
+/* Box on top */
+.box-heading {
+    position: fixed;
+    background-color: var(--black-color);
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+
+.box-item {
+    margin: 8px 20px;
+    text-align: center;
+    width: 25%;
+    padding: 10px 0;
+}
+
+.box-item a {
+    display: block;
+    width: 100%;
+    border-style: none;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.box-item:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+/* Image top */
+
+.header {
+    position: relative;
+    top: 0;
+    display: flex;
+    font-weight: 300;
+}
+
+
+.img {
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://www.w3schools.com/w3images/coffeehouse.jpg);
+    height: 500px;
+}
+
+.header-left {
+    padding: 4px 8px;
+    line-height: 1.4rem;
+    font-size: 1.5rem;
+    text-size-adjust: 100%;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    position: absolute;
+    bottom: 12px;
+    left: 24px;
+}
+
+.header-right {
+    padding: 4px 8px;
+    line-height: 1.4rem;
+    font-size: 1.5rem;
+    text-size-adjust: 100%;
+    color: var(--white-color);
+    background-color: transparent;
+    position: absolute;
+    bottom: 12px;
+    right: 24px;
+}
+
+.header-mid {   
+    display: flex;
+    width: 180px;
+    height: 300px;
+    margin: auto;
+    color: var(--white-color);
+    font-size: 10rem;
+    text-align: center;
+    line-height: 15rem;
+    font-weight: 400;
+}
+
+/* About the cafe */
+#about {
+    width: 700px;
+    margin: 0 auto;
+}
+.abt-cf {
+    padding-top: 39px;
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 80px;
+}
+
+.abt-cf span {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 2rem;
+    line-height: 1rem;
+    text-align: center;
+    padding: 4px 8px;
+    letter-spacing: 4px;
+}
+
+.abt-text p {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    line-height: 2.6rem;
+}
+
+.abt-text .abt-notice {
+    background-color: #f1f1f1;
+    border-left: 6px solid #cccccc;
+}
+
+.abt-text .abt-notice .text-italic,
+.abt-text .abt-notice .text-nor {
+    padding: 18px 20px;
+}
+
+.abt-text .abt-notice .text-italic {
+    font-style: italic;
+    padding-bottom: 0;
+}
+
+.abt-text .abt-notice .text-nor {
+    padding-top: 0;
+}
+.abt-time {
+    margin-top: 40px;
+}
+
+.abt-time img {
+    width: 100%;
+}
+
+.abt-time .abt-open,
+.abt-time .abt-addr {
+    padding: 20px 0 10px 0;
+    width: 100%;
+    display: flex;
+    font-size: 2rem;
+}
+
+/* The Menu */
+#menu {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.menu-heading {
+    padding-top: 39px;
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 80px;
+}
+
+.menu-heading span{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 2rem;
+    line-height: 1rem;
+    text-align: center;
+    padding: 4px 8px;
+    letter-spacing: 4px;
+}
+
+.menu-box {
+    box-shadow: 0 2px 3px 2px #deddd9;
+    display: block;
+}
+
+.box-title {
+    display: flex;
+    box-shadow: 0 2px 3px 2px #deddd9;
+    padding: 6px 18px;
+}
+
+.box-title p {
+    margin: 0;
+    padding: 6px 0;
+    width: 50%;
+    text-align: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.box-title .eat {
+    background-color: #616161;
+    color: var(--white-color);
+}
+
+.box-list ul {
+    padding-left: 0;
+    padding-bottom: 70px;
+}
+
+.box-list-item {
+    width: 100%;
+    list-style: none;
+    text-align: left;
+    font-size: 1.6rem;
+    margin: 70px 20px;
+    color: #7f7f7d;
+}
+
+.box-list-item h3 {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.box-list-item:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.menu-img {
+    margin-top: 32px;
+}
+
+/* Where to find us */
+#where {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.whe-title {
+    padding-top: 39px;
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 80px;
+}
+
+.whe-title span {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 2rem;
+    line-height: 1rem;
+    text-align: center;
+    padding: 4px 8px;
+    letter-spacing: 4px;
+}
+
+.text {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.notice {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.notice-head {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    padding: 2px 6px 2px 4px;
+    font-size: 1.7rem;
+}
+
+.notice-2 {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.notice-2 .rev {
+    font-weight: 800;
+}
+
+.form-whe p {
+    margin: 20px 0;
+}
+
+.form-whe input {
+    width: 100%;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    padding: 20px 10px;
+    font-family: "Inconsolata", sans-serif;
+    outline: none;
+}
+
+.send {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 2rem;
+    width: 22%;
+    text-align: center;
+    padding: 10px 12px;
+    margin-top: 10px;
+}
+
+.send:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+    color: var(--black-color);
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    background-color: #f1f1f1;
+    display: flex;
+}
+
+footer p {
+    font-size: 2rem;
+    margin: auto;
+    color: var(--black-color);
+}
+
+footer a {
+    color: var(--black-color);
+}
+
+footer a :hover {
+    color: #7bb77d;
+}
