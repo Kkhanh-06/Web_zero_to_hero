@@ -33,7 +33,7 @@
 
 .header {
     position: relative;
-    top: 0;
+    top: 52px;
     display: flex;
     font-weight: 300;
 }

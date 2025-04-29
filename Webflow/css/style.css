@@ -1,0 +1,60 @@
+.main {
+    background-color: var(--black-color);
+    color: var(--yellow-color);
+}
+
+/* Navbar */
+.nav-web {
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+    width: 100%;
+    font-size: 2rem;
+    padding: 2rem 4rem  
+}
+
+.left {
+    cursor: pointer;
+}
+
+.mid {
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(42, 41, 41, 0.3), rgba(41, 41, 41, 0.3));
+    border-radius: 2rem;
+    backdrop-filter: blur(.6rem);
+}
+
+.mid div {
+    border-radius: 1.8rem;
+    padding: 2rem 3.6rem;
+    cursor: pointer;
+    font-size: 1.9rem;
+}
+
+.mid div:hover {
+    background-image: linear-gradient(to bottom, rgba(50, 50, 50, .5), rgba(50, 50, 50, .5));
+    box-shadow: .1rem .2rem 1rem #2c2c2c,
+                .1rem .2rem 2rem #2c2c2c;
+}
+
+.right {
+    border: .1rem solid var(--yellow-color);
+    color: var(--yellow-color);
+    font-weight: 1000;
+    padding: 1.4rem 3rem;
+    border-radius: 3rem;
+    cursor: pointer;   
+    letter-spacing: .14rem;
+}
+
+.right:hover {
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    box-shadow: .1rem .2rem 1rem var(--yellow-color),
+                .1rem .2rem 2rem var(--yellow-color);
+}
+
+/* SimplePay */
