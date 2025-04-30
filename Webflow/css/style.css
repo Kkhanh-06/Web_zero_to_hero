@@ -1,6 +1,7 @@
 .main {
     background-color: var(--black-color);
     color: var(--yellow-color);
+    
 }
 
 /* Navbar */
@@ -34,10 +35,19 @@
     font-size: 1.9rem;
 }
 
+.mid a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
 .mid div:hover {
     background-image: linear-gradient(to bottom, rgba(50, 50, 50, .5), rgba(50, 50, 50, .5));
     box-shadow: .1rem .2rem 1rem #2c2c2c,
                 .1rem .2rem 2rem #2c2c2c;
+}
+
+.mid div:active {
+    color: rgb(189, 187, 187);
 }
 
 .right {
@@ -57,4 +67,73 @@
                 .1rem .2rem 2rem var(--yellow-color);
 }
 
+.right:active {
+    background-color: rgb(164, 218, 56);
+}
+
 /* SimplePay */
+#simple {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.sub-heading {
+    margin-top: 14rem;
+    font-size: 1.9rem;
+    font-weight: 1000;
+}
+
+.hero-heading {
+    font-size: 10rem;
+    color: var(--white-color);
+    font-weight: 1000;
+    padding: 0 20rem;
+    line-height: normal;
+}
+
+.hero-text {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0 40rem;
+    color: var(--white-color);
+}
+
+button {
+    background-color: var(--yellow-color);
+    padding: 2.4rem 4.8rem;
+    margin: auto;
+    border-radius: 4rem;
+    font-weight: 1000;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--yellow-color);
+    background-color: transparent;
+    border: .4rem solid var(--yellow-color);
+    box-sizing: border-box;
+}
+
+button:active {
+    color: yellowgreen;
+    background-color: transparent;
+    border: .4rem solid yellowgreen;
+    box-sizing: inherit;
+}
+
+/* Services */
+.page {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.st-left {
+    text-align: left;
+}
+
+.st-right img {
+    width: 54rem;
+}
