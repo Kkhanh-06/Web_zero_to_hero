@@ -4,7 +4,8 @@
     padding: 0;
     border: 0;
     margin: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 ul li {
@@ -19,6 +20,7 @@ html {
     box-sizing: border-box;
     background-color: #000;
     text-align: center;
+    line-height: normal;
 }
 
 :root {

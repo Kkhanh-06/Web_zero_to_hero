@@ -1,7 +1,6 @@
 .main {
     background-color: var(--black-color);
-    color: var(--yellow-color);
-    
+    color: var(--yellow-color);   
 }
 
 /* Navbar */
@@ -125,15 +124,122 @@ button:active {
 
 /* Services */
 .page {
-    padding-top: 10rem;
+    padding-top: 8rem;
     display: flex;
     justify-content: space-around;
+    margin: 0 3rem;
 }
 
-.st-left {
+.st-left,
+.nd-left,
+.rd-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
     text-align: left;
+    justify-content: center;
 }
 
-.st-right img {
+.st-sub,
+.nd-sub,
+.rd-sub {
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.st-heading,
+.nd-heading,
+.rd-heading {
+    font-size: 5.6rem;
+    color: var(--white-color);
+    font-weight: 1000;
+}
+
+.st-text,
+.nd-text,
+.rd-text {
+    color: var(--white-color);
+    padding-right: 20rem;
+    font-size: 1.6rem;
+}
+
+.st-right img,
+.nd-right img,
+.rd-right img {
     width: 54rem;
+}
+
+.rd-button {
+    margin: 0 auto 0 0;
+    padding: 1.6rem 3rem;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    font-weight: 1000;
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.rd-button:hover {
+    box-sizing: border-box;
+    background-color: var(--black-color);
+    color: var(--yellow-color);
+    border: .3rem solid var(--yellow-color);
+    padding: 1.4rem 2.7rem;
+}
+
+.rd-button:active {
+    color: yellowgreen;
+    border-color: yellowgreen;
+}
+
+/* Blockchains */
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 16rem 0 30rem 0;
+}
+
+.block-sub {
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.block-heading {
+    font-size: 6rem;
+    color: var(--white-color);
+    font-weight: 1000;
+    padding: 0 31rem;
+}
+
+.block-text {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    padding: 0 42rem;
+}
+
+.block-button {
+    margin: 0 auto;
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    font-size: 2.2rem;
+    font-weight: 1000;
+    cursor: pointer;
+    border-radius: 4rem;
+    padding: 1.6rem 3rem ;
+}
+
+.block-button:hover {
+    border: .3rem solid var(--yellow-color);
+    color: var(--yellow-color);
+    background-color: transparent;
+    padding: 1.4rem 2.7rem;
+    box-sizing: border-box;
+}
+
+.block-button:active {
+    border-color: yellowgreen;
+    color: yellowgreen;
 }
