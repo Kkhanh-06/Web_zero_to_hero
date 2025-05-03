@@ -13,7 +13,8 @@
     color: var(--white-color);
     width: 100%;
     font-size: 2rem;
-    padding: 2rem 4rem  
+    padding: 2rem 4rem;
+    animation-name: slideup;
 }
 
 .left {
@@ -199,7 +200,7 @@ button:active {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: 16rem 0 30rem 0;
+    padding: 16rem 0 10rem 0;
 }
 
 .block-sub {
@@ -242,4 +243,70 @@ button:active {
 .block-button:active {
     border-color: yellowgreen;
     color: yellowgreen;
+}
+
+/* Icons */
+.icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+
+.top5 {
+    display: flex;
+    gap: 4rem;
+}
+
+.top5 img {
+    box-shadow: 0 0 .2rem #202020 inset,
+                0 0 .8rem #202020;
+    padding: 5.2rem;
+    border-radius: 4rem;
+    background-color: #0b0b0b;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.top5 img:hover {
+    box-shadow: 0 0 .6rem #303030 inset,
+                0 0 1rem #303030,
+                0 0 2rem #303030;
+}
+
+.top5 img:active {
+    background-color: #0f0f0f;
+    box-shadow: 0 0 1rem #3d3d3d;
+}
+
+/* Footer */
+footer {
+    margin-top: 6rem;
+    border-top: .2rem solid #3d3d3d;
+    padding: 2rem 4rem;
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    text-shadow: var(--white-color);
+    background-color: #1a1a1a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.web {
+    color: var(--yellow-color);
+    text-shadow: 0 0 .3rem rgb(236, 236, 20);
+}
+
+.ytb {
+    color: red;
+    text-shadow: 0 0 .3rem rgb(216, 82, 82);
+}
+
+.web:hover,
+.ytb:hover {
+    text-decoration: underline;
 }

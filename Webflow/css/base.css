@@ -21,6 +21,7 @@ html {
     background-color: #000;
     text-align: center;
     line-height: normal;
+    text-shadow: 0 0 .6rem var(--white-color);
 }
 
 :root {
