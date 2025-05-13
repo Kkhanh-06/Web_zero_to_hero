@@ -1,6 +1,21 @@
-.main {
-    background-color: var(--black-color);
+body {
+    /* background-color: var(--black-color); */
     color: var(--yellow-color);
+    background-image: url(https://images.hdqwalls.com/wallpapers/bitcoin-logo-black-background-4k-xe.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: blueviolet;
+    background-image: linear-gradient(to bottom right, yellow, rgb(117, 153, 45));
+    border-radius: 8rem;
 }
 
 /* Navbar */
@@ -21,6 +36,7 @@
 
 .nav-web .left {
     cursor: pointer;
+    filter: drop-shadow(0 0 1rem yellow);
 }
 
 .nav-web .left a img {
@@ -57,20 +73,37 @@
 }
 
 .nav-web .right {
-    border: .1rem solid var(--yellow-color);
+    /* border: .1rem solid var(--yellow-color); */
     color: var(--yellow-color);
     font-weight: 1000;
     padding: 1.4rem 3rem;
-    border-radius: 3rem;
+    border-radius: 10rem;
     cursor: pointer;
     letter-spacing: .14rem;
+    background-color: var(--black-color);
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-web .right::after {
+    content: '';
+    position: absolute;
+    height: 108%;
+    width: 103%;
+    background: linear-gradient(to bottom right, yellow, rgb(214, 214, 39), rgb(170, 170, 45));
+    border-radius: 10rem;
+    z-index: -1;
 }
 
 .nav-web .right:hover {
-    background-color: var(--yellow-color);
     color: var(--black-color);
     box-shadow: .1rem .2rem 1rem var(--yellow-color),
-        .1rem .2rem 2rem var(--yellow-color);
+        -.1rem .2rem 2rem var(--yellow-color);
+    z-index: 0;
+    text-shadow: none;
 }
 
 .nav-web .right:active {
@@ -105,29 +138,45 @@
     color: var(--white-color);
 }
 
-.start {
-    background-color: var(--yellow-color);
-    padding: 2.4rem 4.8rem;
-    margin: auto;
-    color: var(--black-color);
-    border-radius: 4rem;
+button {
+    background-color: transparent;
+}
+
+#simple .start {
+    padding: 2rem 4rem;
+    color: var(--yellow-color);
+    background-color: #303030;
+    border-radius: 10rem;
     font-weight: 1000;
-    font-size: 2rem;
+    font-size: 1.6rem;
     cursor: pointer;
+    border: 10m solid linear-gradient(to right, yellow, yellowgreen, green);
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#simple .start::after {
+    content: "";
+    position: absolute;
+    width: 102%;
+    height: 108%;
+    border-radius: 10rem;
+    background: linear-gradient(to bottom left, rgb(103, 211, 67), orange, yellow, gold, rgb(36, 197, 60), rgb(163, 233, 12), rgb(110, 229, 63));
+    z-index: -1;
+}
+
+.start:link #services {
+    color: green;
 }
 
 .start:hover {
-    color: var(--yellow-color);
-    background-color: transparent;
-    border: .4rem solid var(--yellow-color);
-    box-sizing: border-box;
-}
-
-.start:active {
-    color: yellowgreen;
-    background-color: transparent;
-    border: .4rem solid yellowgreen;
-    box-sizing: inherit;
+    scale: 1.02;
+    color: rgb(0, 32, 0) !important;
+    transition: scale 1s;
 }
 
 /* Services */
@@ -175,6 +224,7 @@
 .nd-right img,
 .rd-right img {
     width: 54rem;
+    filter: drop-shadow(0 0 1rem rgb(71, 71, 2));
 }
 
 .rd-button {
@@ -183,18 +233,33 @@
     border-radius: 3rem;
     font-size: 1.6rem;
     font-weight: 1000;
-    background-color: var(--yellow-color);
-    color: var(--black-color);
+    background-color: #202022;
+    color: var(--yellow-color);
     box-sizing: border-box;
+    text-shadow: none;
     cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rd-button::after {
+    content: '';
+    position: absolute;
+    background-color: var(--yellow-color);
+    width: 102%;
+    height: 106%;
+    border-radius: 10rem;
+    z-index: -1;
 }
 
 .rd-button:hover {
     box-sizing: border-box;
     background-color: var(--black-color);
-    color: var(--yellow-color);
-    border: .3rem solid var(--yellow-color);
-    padding: 1.4rem 2.7rem;
+    color: var(--black-color);
+    scale: 1.04;
+    transition: scale .8s;
 }
 
 .rd-button:active {
@@ -237,14 +302,16 @@
     cursor: pointer;
     border-radius: 4rem;
     padding: 1.6rem 3rem;
+    text-shadow: none;
 }
 
 .block-button:hover {
     border: .2rem solid var(--yellow-color);
     color: var(--yellow-color);
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 1.4rem 2.8rem;
-    scale: 1.12;
+    scale: 1.02;
+    transition: scale 1s;
     transition: scale 0.2s;
 }
 
@@ -282,8 +349,7 @@
     box-shadow: 0 0 .6rem #303030 inset,
         0 0 1rem #303030,
         0 0 2rem #303030;
-    scale: 1.12;
-    transition: scale 0.2s;
+    animation: big_to_small ease-in 1.8s infinite;
 }
 
 .top5 img:active {
@@ -497,6 +563,9 @@ a {
     text-align: center;
     font-size: 1.6rem;
     border: .06rem solid #303030;
+    box-shadow: 0 0 1rem #303030,
+                0 0 2rem #303030,
+                0 0 1rem rgb(91, 91, 3) inset;
 }
 
 .purchase {
@@ -597,6 +666,7 @@ a {
     text-align: center;
     cursor: pointer;
     border-radius: 1rem;
+    text-shadow: none;
 }
 
 .confirm:hover {

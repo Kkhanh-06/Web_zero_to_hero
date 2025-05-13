@@ -21,11 +21,32 @@ html {
     background-color: #000;
     text-align: center;
     line-height: normal;
-    text-shadow: 0 0 .6rem var(--white-color);
+    text-shadow: 0 0 .6rem #303030;
 }
 
 :root {
-    --white-color: #fff;
+    --white-color: rgb(203, 220, 234);
     --yellow-color: #c9ff3d;
     --black-color: #000;
+}
+
+@keyframes big_to_small {
+    0%, 100% {
+        scale: 1;
+    }
+    10%, 90% {
+        scale: 1.01;
+    }
+    20%, 80% {
+        scale: 1.02;
+    }
+    30%, 70% {
+        scale: 1.03;
+    }
+    40%, 60% {
+        scale: 1.04;
+    }
+    50% {
+        scale: 1.05;
+    }
 }
