@@ -18,7 +18,7 @@ html {
     font-size: 62.5%;
     line-height: 1.6rem;
     box-sizing: border-box;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, .3);
     text-align: center;
     line-height: normal;
     text-shadow: 0 0 .6rem #303030;
@@ -48,5 +48,14 @@ html {
     }
     50% {
         scale: 1.05;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

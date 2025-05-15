@@ -1,21 +1,25 @@
 body {
     /* background-color: var(--black-color); */
     color: var(--yellow-color);
-    background-image: url(https://images.hdqwalls.com/wallpapers/bitcoin-logo-black-background-4k-xe.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(94, 7, 7, 0.6), rgba(98, 7, 7, 0.6)) ,url(https://images.hdqwalls.com/wallpapers/bitcoin-logo-black-background-4k-xe.jpg);
+    background-color: rgba(0, 0, 0, .2);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    croll-snap-align: center;
 }
 
 ::-webkit-scrollbar {
-    width: 1rem;
+    width: .4rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: blueviolet;
-    background-image: linear-gradient(to bottom right, yellow, rgb(117, 153, 45));
+    background-image: linear-gradient(to bottom right, rgb(88, 88, 7), rgb(47, 66, 8));
     border-radius: 8rem;
 }
 
@@ -122,6 +126,7 @@ body {
     margin-top: 14rem;
     font-size: 1.9rem;
     font-weight: 1000;
+    cursor: default;
 }
 
 .hero-heading {
@@ -130,6 +135,7 @@ body {
     font-weight: 1000;
     padding: 0 10rem;
     line-height: normal;
+    cursor: default;
 }
 
 .hero-text {
@@ -137,10 +143,7 @@ body {
     line-height: 3rem;
     padding: 0 36rem;
     color: var(--white-color);
-}
-
-button {
-    background-color: transparent;
+    cursor: default;
 }
 
 #simple .start {
@@ -178,6 +181,7 @@ button {
 
 /* Services */
 .page {
+    height: 100vh;
     padding-top: 10rem;
     display: flex;
     justify-content: space-around;
@@ -192,6 +196,7 @@ button {
     gap: 5rem;
     text-align: left;
     justify-content: center;
+    cursor: default;
 }
 
 .st-sub,
@@ -199,6 +204,7 @@ button {
 .rd-sub {
     font-size: 2rem;
     font-weight: 1000;
+    cursor: default;
 }
 
 .st-heading,
@@ -207,6 +213,7 @@ button {
     font-size: 5.6rem;
     color: var(--white-color);
     font-weight: 1000;
+    cursor: default;
 }
 
 .st-text,
@@ -215,13 +222,14 @@ button {
     color: var(--white-color);
     padding-right: 20rem;
     font-size: 1.6rem;
+    cursor: default;
 }
 
-.st-right img,
 .nd-right img,
 .rd-right img {
     width: 54rem;
     filter: drop-shadow(0 0 1rem rgb(71, 71, 2));
+    cursor: default;
 }
 
 .rd-button {
@@ -270,11 +278,13 @@ button {
     flex-direction: column;
     gap: 3rem;
     padding: 12rem 0 10rem 0;
+    cursor: default;
 }
 
 .block-sub {
     font-size: 2rem;
     font-weight: 1000;
+    cursor: default;
 }
 
 .block-heading {
@@ -282,12 +292,14 @@ button {
     color: var(--white-color);
     font-weight: 1000;
     padding: 0 31rem;
+    cursor: default;
 }
 
 .block-text {
     color: var(--white-color);
     font-size: 1.8rem;
     padding: 0 42rem;
+    cursor: default;
 }
 
 .block-button {
@@ -613,7 +625,6 @@ a {
     background-color: #2b2b2b;
     border: .1rem solid #808080;
     width: 11rem;
-    padding: 1rem;
     border-radius: .8rem;
     position: absolute;
     right: -2rem;
@@ -621,9 +632,44 @@ a {
     z-index: 10;
 }
 
-.right1>.fa-angle-down:active .child{
+
+.child .checked {
     display: flex;
     justify-content: space-between;
+}
+
+.child .no-checked {
+    text-align: left;
+}
+
+.child li {
+    padding: .6rem .8rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    border-radius: .8rem;
+    border-bottom: .1rem solid #808080;
+}
+
+span {
+    font-family: "Inconsolata", monospace;
+}
+
+.purchase-item2 .child li:hover {
+    background-color: #808080;
+}
+
+.child::after {
+    content: '';
+    position: absolute;
+    height: 3rem;
+    width: 100%;
+    display: block;
+    top: -2.6rem;
+    right: 0;
+}
+
+.fas.fa-angle-down:hover .child {
+    display: block;
 }
 
 .purchase-item2 .child i span {
@@ -651,6 +697,53 @@ a {
     width: 50%;
 }
 
+.add-top .item-add .left {
+    position: relative;
+}
+
+.add-top .item-add .left .select-add {
+    position: absolute;
+    background-color: #303030;
+    display: none;
+    right: 0;
+    top: 4rem;
+    border-radius: .8rem;
+}
+.select-add::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    top: -1.8rem;
+}
+
+.fas.fa-angle-down {
+    cursor: pointer;
+}
+
+.fas.fa-angle-down:hover .select-add {
+    display: block;
+}
+
+.select-add .country {
+    padding: 1rem 5rem 1rem 2rem;
+    font-family: "Inconsolata", monospace;
+    cursor: pointer;
+    border-radius: .8rem;
+    border-bottom: .1rem solid #808080;
+}
+
+
+
+.select-add .country:hover {
+    color: var(--yellow-color);
+}
+
+.select-add .country:active {
+    color: yellowgreen;
+}
+
 .add-top .left,
 .add-top .right {
     display: flex;
@@ -658,7 +751,7 @@ a {
     justify-content: space-between;
     background-color: #303030;
     padding: 1rem 2rem;
-    margin-top: .6rem;
+    margin-top: 1rem;
     border-radius: 1rem;
     font-size: 1.6rem;
     border: .08rem solid #686767;
@@ -680,7 +773,7 @@ a {
     border: .08rem solid #686767;
     border-radius: 1rem;
     padding: 1rem 0 5rem 1rem;
-    margin-top: .6rem;
+    margin-top: 1rem;
     color: white;
 }
 
