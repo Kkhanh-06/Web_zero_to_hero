@@ -1,0 +1,32 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+}
+
+:root {
+    --text-color: #888385;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    text-shadow: 1px 1px 1px rgba(25, 27, 33, 0.35);
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
