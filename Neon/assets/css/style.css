@@ -1,6 +1,7 @@
 /* Navbar control */
 .navbar {
-    position: sticky;
+    width: 94%;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -78,6 +79,7 @@ header {
     z-index: -1;
     height: 100%;
     padding-bottom: 16rem;
+    padding-top: 8rem;
 }
 
 .list-scroll {
@@ -134,4 +136,128 @@ header {
     box-shadow: 1rem 1rem 4rem #2a2b2d,
             -.4rem -.2rem 3rem #2a2b2c;
     background: radial-gradient(37.53% 147.33% at 5.39% 8.57%, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #26282a 0%, #212325 100%);
+}
+
+/* Features */
+.features {
+    background: radial-gradient(37.53% 147.33% at 5.39% 8.57%, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #26282a 0%, #212325 100%);
+    display: flex;
+    padding: 12rem 4rem;
+    gap: 2rem;
+    color: #d7e1ea;
+    padding-bottom: 4rem;
+}
+
+.main-feature {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+}
+
+.text-feat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-feat {
+    font-size: 3.4rem;
+    font-weight: 800;
+    padding-right: 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: .2rem;
+    height: 4rem;
+    background-color: #2a2b30;
+}
+
+.section-feat {
+    font-size: 1.4rem;
+    color: #94a2b2;
+    padding-left: 2rem;
+    line-height: 2rem;
+}
+
+.list-features {
+    display: flex;
+    overflow-x: auto;
+    width: 69rem;
+    margin-top: 5rem;
+    scroll-snap-type: x mandatory;
+    justify-content: space-evenly;
+    gap: 4.3rem;
+}
+
+.feature-item {
+    flex: 0 0 24rem;
+    box-sizing: border-box;
+    background-image: linear-gradient(135deg, #3A3E41 0%, #2A2D30 49%, #242628 100%), linear-gradient(139deg, #434B54 1%, #2A2C2F 45%, #191B1E 75%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    box-shadow: 1.875rem 1.5625rem 1.375rem rgba(21, 22, 24, 0.24), -4px -4px 15px rgba(195, 200, 205, 0.04);
+    border-radius: 2rem;
+    display: flex;
+    padding: 4rem 2rem;
+    flex-direction: column;
+    text-align: left;
+    gap: 2.3rem;
+    scroll-snap-align: start;
+}   
+
+.icon {
+    background: linear-gradient(136deg, #2D3135 7%, #3E4248 50%, #2D3135 93%) 0% 0% / 200% 200%;
+    box-shadow: inset -2px -2px 2px rgba(83, 86, 102, 0.14), inset 2px 2px 5px rgba(0, 0, 0, 0.38);
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.icon i {
+    font-size: 1.5rem;
+    padding: 1rem 1.2rem;
+    padding-left: 1.4rem;
+    color: #fe8c67;
+}
+
+.sub-icon {
+    font-size: 1.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.fa-dice-d6 {
+    color: #77c6d5 !important;
+}
+
+.fa-comment-alt {
+    color: #66c8a5 !important;
+}
+
+.fa-undo-alt {
+    color: #7dbbc7 !important;
+}
+
+.main-icon {
+    font-size: 1.4rem;
+    color: #94959e;
+    white-space: nowrap;
+    line-height: 2rem;
+}
+
+.list-features::-webkit-scrollbar {
+    height: 1rem;
+}
+
+.list-features::-webkit-scrollbar-track {
+    background: linear-gradient(85deg, #24262B 1%, #2A2C2E 98%);   
+    box-shadow: inset -2px -4px 8px rgba(73, 73, 73, 0.4), inset 0px 4px 7px #151616;
+}
+
+.list-features::-webkit-scrollbar-thumb {
+    border-radius: 10rem;
+    background: linear-gradient(175.7deg, #3E4248 0%, #313437 100%);
+    box-shadow: -1px 2px 2px rgba(15, 18, 22, 0.6), inset 0px -2px 1px #0E1216; 
 }
