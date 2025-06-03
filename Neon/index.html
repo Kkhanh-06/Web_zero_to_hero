@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,24 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <div class="loading">
+        <div class="ld-ctn">
+            <div class="ld-up up"></div>
+            <div class="ld-up">H</div>
+            <div class="ld-up">E</div>
+            <div class="ld-up">L</div>
+            <div class="ld-up">L</div>
+            <div class="ld-up">O</div>
+        </div>
+
+        <div class="ld-line"></div>
+    </div>
+
     <nav class="navbar">
         <div class="logo--left">
             <img src="./assets/image/logo-default.svg" alt="">
@@ -56,7 +73,7 @@
                         <li class="page">Testimonials</li>
                         <li class="page">Testimonials 2</li>
                         <li class="page">Single career</li>
-                        <li class="page">Single post    </li>
+                        <li class="page">Single post </li>
                     </ul>
                 </li>
             </ul>
@@ -67,26 +84,74 @@
     </nav>
 
     <header id="home">
-        <div class="head-left">
-            <h2 class="text-heading">
-                #1 Everyday <br>
-                Application
-            </h2>
-    
-            <p class="text-main">Welcome to Neon, an award-winning & easy-to-use mobile application that revolutionizes your daily work tasks.</p>
-            
-            <div class="button">
-                <button class="heading-button">Start Using for Free</button>
+        <div class="home-container">
+            <div id="home-item1" class="home-item">
+                <div class="head-left">
+                    <h2 class="text-heading" style="white-space: nowrap;">
+                        #1 Everyday <br>
+                        Application
+                    </h2>
+
+                    <p class="text-main">Welcome to Neon, an award-winning & easy-to-use mobile application that
+                        revolutionizes
+                        your daily work tasks.</p>
+
+                    <div class="button">
+                        <button class="heading-button">Start Using for Free</button>
+                    </div>
+                </div>
+                <div class="head-right">
+                    <img src="./assets/image/heading_image.png" alt="" style="width: 56rem; height: 50rem; margin-right: 6rem;">
+                </div>
             </div>
-        </div>
-        <div class="head-right">
-            <img src="./assets/image/heading_image.png" alt="" style="width: 62rem; height: 55rem;">
+            <div id="home-item2" class="home-item">
+                <div class="head-left">
+                    <h2 class="text-heading">
+                        Awesome <br>
+                        Performance
+                    </h2>
+
+                    <p class="text-main">Neon delivers high performance and a variety of features that you’ll surely
+                        appreciate even if you use a budget-class device..</p>
+
+                    <div class="button">
+                        <button class="heading-button">Start Using for Free</button>
+                    </div>
+                </div>
+                <div class="head-right">
+                    <img src="./assets/image/image-03-451x630.png" alt="" style="width: 35rem; height: 45rem; margin-right: 6rem;">
+                </div>
+            </div>
+            <div id="home-item3" class="home-item">
+                <div class="head-left">
+                    <h2 class="text-heading" style="white-space: nowrap;">
+                        Do More Tasks<br>
+                        with Neon
+                    </h2>
+
+                    <p class="text-main">Our app was designed to let you manage your time more effectively. Also, it is
+                        a great personal companion for every smartphone user.</p>
+
+                    <div class="button">
+                        <button class="heading-button">Start Using for Free</button>
+                    </div>
+                </div>
+                <div class="head-right">
+                    <img src="./assets/image/image-02-573x615.png" alt="" style="width: 40rem; height: 45rem; margin-right: 6rem;">
+                </div>
+            </div>
         </div>
         <div class="head-scroll">
             <ul class="list-scroll" style="text-align: left; display: flex; flex-direction: column; gap: 3rem;">
-                <li style="font-size: 2.2rem; border-bottom: .1rem solid #4c4f52; padding-bottom: .8rem; padding-right: 1rem; color: aliceblue; cursor: pointer; letter-spacing: normal; margin-bottom: -.6rem;">01</li>
-                <li style="font-size: 1.8rem; color: #575a5f; padding-right: 1rem; cursor: pointer; letter-spacing: normal;">02</li>
-                <li style="font-size: 1.8rem; color: #575a5f; padding-right: 1rem; cursor: pointer; letter-spacing: normal;">03</li>
+                <li class="highlight"
+                    style="font-size: 1.8rem; color: #575a5f; padding-right: 1rem; cursor: pointer; letter-spacing: normal;">
+                    01</li>
+                <li
+                    style="font-size: 1.8rem; color: #575a5f; padding-right: 1rem; cursor: pointer; letter-spacing: normal;">
+                    02</li>
+                <li
+                    style="font-size: 1.8rem; color: #575a5f; padding-right: 1rem; cursor: pointer; letter-spacing: normal;">
+                    03</li>
             </ul>
         </div>
         <div class="background">Neon</div>
@@ -101,7 +166,8 @@
                 <div class="icon"></div>
                 <div class="sub-feat">Features</div>
                 <div class="line"></div>
-                <p class="section-feat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                <p class="section-feat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore...</p>
             </div>
             <div class="list-features">
                 <div class="feature-item first" style="flex: 1;">
@@ -120,11 +186,11 @@
                         <i class="fas fa-dice-d6"></i>
                     </div>
                     <div class="sub-icon">
-                        Different Layouts    
+                        Different Layouts
                     </div>
                     <div class="main-icon">
                         Lorem ipsum dolor sit<br> amet, consectetur<br> adipiscing elit, sed do.
-                    </div> 
+                    </div>
                 </div>
                 <div class="feature-item third" style="flex: 1;">
                     <div class="icon">
@@ -164,11 +230,11 @@
                         <i class="fas fa-dice-d6"></i>
                     </div>
                     <div class="sub-icon">
-                        Different Layouts    
+                        Different Layouts
                     </div>
                     <div class="main-icon">
                         Lorem ipsum dolor sit<br> amet, consectetur<br> adipiscing elit, sed do.
-                    </div> 
+                    </div>
                 </div>
                 <div class="feature-item third" style="flex: 1;">
                     <div class="icon">
@@ -208,11 +274,11 @@
                         <i class="fas fa-dice-d6"></i>
                     </div>
                     <div class="sub-icon">
-                        Different Layouts    
+                        Different Layouts
                     </div>
                     <div class="main-icon">
                         Lorem ipsum dolor sit<br> amet, consectetur<br> adipiscing elit, sed do.
-                    </div> 
+                    </div>
                 </div>
                 <div class="feature-item third" style="flex: 1;">
                     <div class="icon">
@@ -252,11 +318,11 @@
                         <i class="fas fa-dice-d6"></i>
                     </div>
                     <div class="sub-icon">
-                        Different Layouts    
+                        Different Layouts
                     </div>
                     <div class="main-icon">
                         Lorem ipsum dolor sit<br> amet, consectetur<br> adipiscing elit, sed do.
-                    </div> 
+                    </div>
                 </div>
                 <div class="feature-item third" style="flex: 1;">
                     <div class="icon">
@@ -320,7 +386,7 @@
                         $159
                     </div>
                     <div class="term">
-                        Per 
+                        Per
                         <span>Year</span>
                     </div>
                 </div>
@@ -359,7 +425,7 @@
                             $350
                         </div>
                         <div class="term">
-                            Per 
+                            Per
                             <span>Year</span>
                         </div>
                     </div>
@@ -396,7 +462,7 @@
                         $550
                     </div>
                     <div class="term">
-                        Per 
+                        Per
                         <span>Year</span>
                     </div>
                 </div>
@@ -421,8 +487,8 @@
                         <i class="fas fa-check"></i>
                         Regular Updates
                     </li>
-                </ul> 
-                <button class="select">Select Plan</button>  
+                </ul>
+                <button class="select">Select Plan</button>
             </div>
         </section>
     </section>
@@ -438,7 +504,8 @@
                         </span>
                     </div>
                     <div class="first-item main">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.
                     </div>
                 </div>
                 <div class="line"></div>
@@ -450,7 +517,8 @@
                         </span>
                     </div>
                     <div class="second-item main">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.
                     </div>
                 </div>
             </div>
@@ -473,7 +541,8 @@
                         Easy Customization
                     </div>
                     <div class="first-item main">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.
                     </div>
                 </div>
                 <div class="line"></div>
@@ -485,7 +554,8 @@
                         Simple Setup
                     </div>
                     <div class="second-item main">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.
                     </div>
                 </div>
             </div>
@@ -495,7 +565,8 @@
         <section class="getIn" id="contact">
             <div class="subscribe" style="width: 50%;">
                 <div class="subscribe-heading">Get in Touch</div>
-                <div class="subscribe-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+                <div class="subscribe-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
                 <div class="comment">
                     <div class="input">
                         <input type="text" placeholder="Your name *">
@@ -538,7 +609,7 @@
                             </tr>
                             <tr>
                                 <td class="office left">Office.</td>
-                                <td class="office right">	Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                <td class="office right"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                             </tr>
                         </table>
                     </div>
@@ -560,7 +631,8 @@
             <div class="what-title">
                 <div class="what-title-left">
                     <div class="sub">What's new?</div>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</div>
                 </div>
                 <div class="what-title-right">
                     <div class="see">
@@ -607,25 +679,29 @@
                     <li class="how-item">
                         <span class="number">01</span>
                         <div class="sub">Easy Customize</div>
-                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun  </div>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididun </div>
                         <div class="line-hover"></div>
                     </li>
                     <li class="how-item">
                         <span class="number">02</span>
                         <div class="sub">Different Layouts</div>
-                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun  </div>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididun </div>
                         <div class="line-hover"></div>
                     </li>
                     <li class="how-item">
                         <span class="number">03</span>
                         <div class="sub">Friendly Support</div>
-                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun  </div>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididun </div>
                         <div class="line-hover"></div>
                     </li>
                     <li class="how-item">
                         <span class="number">04</span>
                         <div class="sub">Free Update</div>
-                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun  </div>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididun </div>
                         <div class="line-hover"></div>
                     </li>
                 </ul>
@@ -639,16 +715,20 @@
                         Start Here!
                     </div>
                     <ul class="cr-list">
-                        <li class="cr-item"><i class="fas fa-circle" style="color: #ff8c69; font-size: .8rem; margin-right: 1rem;"></i>Creative Space</li>
-                        <li class="cr-item"><i class="fas fa-circle" style="color: #ff8c69; font-size: .8rem; margin-right: 1rem;"></i>Growing Career</li>
-                        <li class="cr-item"><i class="fas fa-circle" style="color: #ff8c69; font-size: .8rem; margin-right: 1rem;"></i>Cookies</li>
-                        <li class="cr-item"><i class="fas fa-circle" style="color: #ff8c69; font-size: .8rem; margin-right: 1rem;"></i>Benefits</li>
+                        <li class="cr-item"><i class="fas fa-circle"
+                                style="color: #ff8c69; font-size: .8rem; margin-right: 1rem;"></i>Creative Space</li>
+                        <li class="cr-item"><i class="fas fa-circle"
+                                style="color: #ff8c69; font-size: .8rem; margin-right: 1rem;"></i>Growing Career</li>
+                        <li class="cr-item"><i class="fas fa-circle"
+                                style="color: #ff8c69; font-size: .8rem; margin-right: 1rem;"></i>Cookies</li>
+                        <li class="cr-item"><i class="fas fa-circle"
+                                style="color: #ff8c69; font-size: .8rem; margin-right: 1rem;"></i>Benefits</li>
                     </ul>
                     <p class="cr-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <div class="number-phone">+1 800 603 6035</div>
                 </div>
                 <div class="cr-image" style="width: 35%;"><img src="./assets/image/image-14-452x354.jpg" alt=""></div>
-                <div class="cr-job" style="width: 40%;"> 
+                <div class="cr-job" style="width: 40%;">
                     <div class="item">
                         <div class="cr-level">Junior Developer</div>
                         <div class="se">Seatle</div>
@@ -680,5 +760,16 @@
             </footer>
         </section>
     </footer>
-</body>
+
+    <script src="./assets/js/loading.js"></script>
+    <script src="./assets/js/home.js"></script>
+    <script>
+        window.onload = function () {
+            let firstElement = document.querySelector("#home"); // Lấy phần tử đầu tiên trong trang
+            if (firstElement) {
+                firstElement.scrollIntoView({ behavior: 'auto' });
+            }
+        };
+    </script>
+
 </html>

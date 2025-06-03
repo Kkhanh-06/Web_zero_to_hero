@@ -22,6 +22,7 @@ html {
 
 body {
     text-shadow: 1px 1px 1px rgba(25, 27, 33, 0.35);
+    z-index: -1;
 }
 
 ul, li {
