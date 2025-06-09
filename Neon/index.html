@@ -27,6 +27,22 @@
         <div class="ld-line"></div>
     </div>
 
+    <div id="page-login">
+        <div class="login">
+
+            <div class="box-log">
+                <header>Log In</header>
+                <p>Log in for using Neon</p>
+                <form action="">
+                    <input type="email" placeholder="Your name *">
+                    <input type="password" placeholder="Password *">
+                    <input type="button" value="Log In">
+                </form>
+                <div class="close"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+    </div>
+
     <nav class="navbar">
         <div class="logo--left">
             <img src="./assets/image/logo-default.svg" alt="">
@@ -83,7 +99,7 @@
         </div>
     </nav>
 
-    <header id="home">
+    <section id="home">
         <div class="home-container">
             <div id="home-item1" class="home-item">
                 <div class="head-left">
@@ -97,7 +113,7 @@
                         your daily work tasks.</p>
 
                     <div class="button">
-                        <button class="heading-button">Start Using for Free</button>
+                        <button class="heading-button" type="button" style="cursor: pointer;">Start Using for Free</button>
                     </div>
                 </div>
                 <div class="head-right">
@@ -115,7 +131,7 @@
                         appreciate even if you use a budget-class device..</p>
 
                     <div class="button">
-                        <button class="heading-button">Start Using for Free</button>
+                        <button class="heading-button" type="button" style="cursor: pointer;">Start Using for Free</button>
                     </div>
                 </div>
                 <div class="head-right">
@@ -133,7 +149,7 @@
                         a great personal companion for every smartphone user.</p>
 
                     <div class="button">
-                        <button class="heading-button">Start Using for Free</button>
+                        <button class="heading-button" type="button" style="cursor: pointer;">Start Using for Free</button>
                     </div>
                 </div>
                 <div class="head-right">
@@ -155,7 +171,7 @@
             </ul>
         </div>
         <div class="background">Neon</div>
-    </header>
+    </section>
 
     <section id="features" class="features">
         <div class="imge-features">
@@ -356,10 +372,10 @@
             </h1>
             <div class="title-often">
                 <ul class="often-list">
-                    <li class="often-item">Annual</li>
-                    <li class="often-item">Monthly</li>
+                    <li id="anu" class="often-item annual">Annual</li>
+                    <li id="mon" class="often-item monthly unlight">Monthly</li>
                     <li class="often-item">
-                        <div class="button-change">
+                        <div id="btn-change" class="button-change">
                             <div class="change-in">
                                 <div class="four-circle">
                                     <div class="circle-top">
@@ -377,17 +393,17 @@
                 </ul>
             </div>
         </header>
-        <section class="pricing-choice">
+        <div class="pricing-choice">
             <div class="choice left">
                 <div class="level">Basic</div>
                 <div class="cost-y">
-                    <div class="cost">
+                    <div class="cost basic">
                         <div class="line"></div>
-                        $159
+                        <p id="basic">$14</p>
                     </div>
                     <div class="term">
                         Per
-                        <span>Year</span>
+                        <span class="year">Year</span>
                     </div>
                 </div>
                 <ul class="list-right">
@@ -420,13 +436,13 @@
                 <div class="choice mid">
                     <div class="level">Standard</div>
                     <div class="cost-y">
-                        <div class="cost">
+                        <div class="cost standard">
                             <div class="line"></div>
-                            $350
+                            <p id="standard">$30</p>
                         </div>
                         <div class="term">
                             Per
-                            <span>Year</span>
+                            <span class="year">Year</span>
                         </div>
                     </div>
                     <ul class="list-right">
@@ -457,13 +473,13 @@
             <div class="choice right">
                 <div class="level">Premium</div>
                 <div class="cost-y">
-                    <div class="cost">
+                    <div class="cost premium">
                         <div class="line"></div>
-                        $550
+                        <p id="premium">$50</p>
                     </div>
                     <div class="term">
                         Per
-                        <span>Year</span>
+                        <span class="year">Year</span>
                     </div>
                 </div>
                 <ul class="list-right">
@@ -490,11 +506,11 @@
                 </ul>
                 <button class="select">Select Plan</button>
             </div>
-        </section>
+        </div>
     </section>
     <section class="contact">
         <header class="contact-title">Welcome to Neon</header>
-        <section class="contact-main">
+        <div class="contact-main">
             <div class="benefit left">
                 <div class="first-item">
                     <div class="first-item title">
@@ -559,7 +575,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
     <footer>
         <section class="getIn" id="contact">
@@ -763,13 +779,11 @@
 
     <script src="./assets/js/loading.js"></script>
     <script src="./assets/js/home.js"></script>
-    <script>
-        window.onload = function () {
-            let firstElement = document.querySelector("#home"); // Lấy phần tử đầu tiên trong trang
-            if (firstElement) {
-                firstElement.scrollIntoView({ behavior: 'auto' });
-            }
-        };
-    </script>
-
+    <script src="./assets/js/pricing.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/contacts.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <!-- <script>
+        window.location.reload();
+    </script> -->
 </html>

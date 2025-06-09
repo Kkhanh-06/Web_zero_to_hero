@@ -21,7 +21,7 @@ function reloadSlider() {
     itemClick.classList.remove('highlight');
     itemList[active].classList.add('highlight');
 
-    clearInterval(refeshSlider);
+    clearInterval(refeshSlider);                                                            
     refeshSlider = setInterval(() => {
         if (active + 1 > 3) {
             active = 0;
@@ -38,3 +38,4 @@ itemList.forEach((li, key) => {
         reloadSlider();
     });
 });
+

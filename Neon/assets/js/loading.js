@@ -19,4 +19,4 @@ setInterval(() => {
 setTimeout(() => {
     var loading = document.querySelector('.loading');
     loading.classList.remove('loading');
-}, 2000);
+}, 1500);
