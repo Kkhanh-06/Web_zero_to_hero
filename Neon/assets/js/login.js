@@ -3,6 +3,7 @@ buttonLogin.forEach(button => {
     button.addEventListener('click', function () {
         var logIn = document.getElementById('page-login');
         logIn.style.display = 'block';
+        window.location.href = '#home';
         document.body.style.overflow = 'hidden';
     })
 })
