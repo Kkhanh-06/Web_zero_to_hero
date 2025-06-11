@@ -1,0 +1,29 @@
+.search-button {
+    flex: 20%;
+    padding: 3px;
+    background-image: linear-gradient(to top, yellow, rgb(248, 248, 170), rgb(247, 253, 224));
+    border-radius: 2px;
+}
+
+.search-button:hover {
+    background-color: yellow;
+    box-shadow: 0 0 3px #ccc,
+        0 0 5px #ccc;
+}
+
+.search-button:active {
+    background-color: yellowgreen;
+}
+
+.search {
+    width: 600px;
+    display: flex;
+}
+
+.search-input {
+    width: 80%;
+}
+
+table {
+    display: ;
+}
