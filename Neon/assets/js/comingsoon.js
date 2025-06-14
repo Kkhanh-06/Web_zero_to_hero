@@ -24,6 +24,37 @@ setInterval(updateCounter, 1000);
 
 var logoReturn = document.getElementById('logo');
 logoReturn.style.cursor = 'pointer';
-logoReturn.addEventListener('click', function() {
+logoReturn.addEventListener('click', function () {
     window.location.href = 'index.html';
 })
+
+
+// Check input
+const yourEmail = document.querySelector('.email .email-input input')
+
+yourEmail.onblur = function() {
+    if (yourEmail.value === "") {
+        document.querySelector('.noti').innerText = 'Please enter your email.';
+    } else {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailRegex.test(yourEmail.value) == false) {
+            document.querySelector('.noti').innerText = 'Please enter correct form of email.'
+        } else {
+            document.querySelector('.noti').innerText = '';
+        }
+    }
+}
+
+const subscribe = document.querySelector('.email button');
+subscribe.onclick = function () {
+    if (yourEmail.value === "") {
+        document.querySelector('.noti').innerText = 'Please enter your email.';
+    } else {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailRegex.test(yourEmail.value) == false) {
+            document.querySelector('.noti').innerText = 'Please enter correct form of email.'
+        } else {
+            document.querySelector('.noti').innerText = '';
+        }
+    }
+}

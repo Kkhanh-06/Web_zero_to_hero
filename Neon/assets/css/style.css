@@ -411,6 +411,7 @@ form input[type = button] {
     position: relative;
     display: flex;
     align-items: center;
+    line-height: 4rem;
 }
 
 .line {
@@ -472,6 +473,7 @@ form input[type = button] {
     font-size: 1.8rem;
     font-weight: 700;
     white-space: nowrap;
+    box-sizing: border-box;
 }
 
 .fa-dice-d6 {
@@ -860,7 +862,7 @@ form input[type = button] {
 .subscribe {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .subscribe-heading {
@@ -894,7 +896,7 @@ form input[type = button] {
 }
 
 textarea {
-    width: 100%;
+    width: 125%;
     box-sizing: border-box;
     line-height: 2rem;
     padding: 2rem;
@@ -916,8 +918,8 @@ textarea {
 
 .btn-sub {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: left;
+    align-items: center;
     gap: 2rem;
 
 }
@@ -986,6 +988,7 @@ label {
 .add-right .contacts {
     font-size: 2.4rem;
     font-weight: bolder;
+    line-height: 3rem;
 }
 
 .add-left .apple {
