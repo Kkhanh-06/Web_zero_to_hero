@@ -55,6 +55,7 @@ subscribe.onclick = function () {
             document.querySelector('.noti').innerText = 'Please enter correct form of email.'
         } else {
             document.querySelector('.noti').innerText = '';
+            alert('Subscribe success!');
         }
     }
 }

@@ -33,9 +33,15 @@
                 <header>Log In</header>
                 <p>Log in to use Neon - The smart task management app</p>
                 <form action="">
-                    <input type="email" placeholder="Your email *">
-                    <input type="password" placeholder="Password *">
-                    <input type="button" value="Log In">
+                    <div>
+                        <input id="email" type="email" placeholder="Your email *">
+                        <div class="noti-email"></div>
+                    </div>
+                    <div>
+                        <input id="password" type="password" placeholder="Password *">
+                        <div class="noti-pass"></div>
+                    </div>
+                    <input id="button" type="button" value="Log In">
                 </form>
                 <div class="close"><i class="fas fa-times"></i></div>
             </div>
