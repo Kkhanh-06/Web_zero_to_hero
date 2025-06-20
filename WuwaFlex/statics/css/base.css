@@ -1,0 +1,21 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Onest", sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #364256;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

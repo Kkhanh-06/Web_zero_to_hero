@@ -1,0 +1,171 @@
+/* Navbar */
+
+nav {
+    background-image: radial-gradient(circle, #272424, #3b3a3a, #1a1919);
+}
+
+.nav-items {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.nav-items li img {
+    width: 16rem;
+    height: 3.5rem;
+}
+
+.nav-items li {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding: .5rem 1rem;
+}
+
+.nav-items li:last-child {
+    display: flex;
+    gap: 1.4rem;
+}
+
+.nav-items li img {
+    width: fit-content;
+}
+
+.nav-items li img:hover {
+    scale: 1.1;
+    transition: .4s;
+}
+
+/* AD */
+
+#ad {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ad img {
+    width: 55rem;
+    border-radius: .6rem;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 1),
+        0 0 1rem rgba(0, 0, 0, .6),
+        0 0 2rem rgba(0, 0, 0, .2);
+}
+
+@keyframes Scale {
+    0% {
+        scale: 1;
+    } 
+    50% {
+        scale: 1.02;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+.scale {
+    animation: Scale ease 1s;
+    transition: all 1s;
+}
+
+/* Build */
+
+.builds {
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    max-width: 83rem;
+    max-height: fit-content;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.list-build {
+    display: flex;
+}
+
+.builds .list-build img {
+    width: 83rem;
+    height: 36.5rem;
+    border-radius: 1rem;
+}
+
+.pause {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pause img {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    border-radius: 1rem;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+    cursor: pointer;
+}
+
+/* Resonators */
+
+#resonators {
+    margin: .6rem;
+    border-radius: 1rem;
+    margin-top: 8rem;   
+    background-color: #262523;
+    color: white;
+}
+
+#resonators header {
+    padding-top: 4rem;
+    font-size: 2.4rem;
+}
+
+.list-races {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 2rem;
+    gap: 1rem;
+}
+
+.item-race img {
+    width: 3.4rem;
+    height: 3.4rem;
+    cursor: pointer;
+    border-radius: .4rem;
+}
+
+.item-race div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem 1.4rem;
+    background-color: #575654;
+    font-size: 1.4rem;
+    margin-right: .4rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.border {
+    border: .1rem solid white;
+}
+
+.line {
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 90%;
+    height: .2rem;
+    background-color: white;
+}
